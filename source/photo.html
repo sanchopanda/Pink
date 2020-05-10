@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pink</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__menu page-header">
+        <a class="page-header__logo-link">
+          <img
+            class="page-header__logo-image"
+            src="img/placeholder"
+            width=""
+            height=""
+            alt="Логотип Pink"
+          />
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-header__page-title">
+        <h1 class="main-header__title">Фотографии пользователей</h1>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="gallery">
+        <p class="gallery__text">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как
+          не хватает ваших?
+        </p>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <a href="#">
+              <img class="gallery__image gallery__image--best" src="" alt="" />
+            </a>
+            <div class="gallery__description">
+              <p class="gallery__author">
+                Анна
+                <span class="galley__time">(5 минут назад)</span>
+              </p>
+              <p class="gallery__comment">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите
+                прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <p class="gallery__like">Нравится: 215</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <a href="#"><img class="gallery__image" src="" alt="" /> </a>
+            <div class="gallery__description">
+              <p class="gallery__author">
+                Левон
+                <span class="galley__time">(5 часов назад)</span>
+              </p>
+              <p class="gallery__comment">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <p class="gallery__like">Нравится: 356</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <a href="#"><img class="gallery__image" src="" alt="" /></a>
+            <div class="gallery__description">
+              <p class="gallery__author">
+                Антон
+                <span class="galley__time">(12 часов назад)</span>
+              </p>
+              <p class="gallery__comment">
+                Соседи будут рады!
+              </p>
+              <p class="gallery__like">Нравится: 666</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <a href="#"><img class="gallery__image" src="" alt="" /></a>
+            <div class="gallery__description">
+              <p class="gallery__author">
+                Борис
+                <span class="galley__time">(20 часов назад)</span>
+              </p>
+              <p class="gallery__comment">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <p class="gallery__like">Нравится: 219</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <a href="#"><img class="gallery__image" src="" alt="" /></a>
+            <div class="gallery__description">
+              <p class="gallery__author">
+                Сергей
+                <span class="galley__time">(25 часов назад)</span>
+              </p>
+              <p class="gallery__comment">
+                Самая кубанская в мире!
+              </p>
+              <p class="gallery__like">Нравится: 4</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <a href="#"><img class="gallery__image" src="" alt="" /></a>
+            <div class="gallery__description">
+              <p class="gallery__author">
+                Максим
+                <span class="galley__time">(40 часов назад)</span>
+              </p>
+              <p class="gallery__comment">
+                Где снег-то?
+              </p>
+              <p class="gallery__like">Нравится: 150</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <a href="#"><img class="gallery__image" src="" alt="" /></a>
+            <div class="gallery__description">
+              <p class="gallery__author">
+                Надежда
+                <span class="galley__time">(45 часов назад)</span>
+              </p>
+              <p class="gallery__comment">
+                Всем GM и взаимные лайки!
+              </p>
+              <p class="gallery__like">Нравится: 256</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section clas="editor">
+        <p class="editor__text">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <form class="editor__form">
+          <img class="editor__image" src="" alt="" />
+          <ul class="editor__list">
+            <li class="editor__item">
+              <button class="editor__tool editor__tool--cut">
+                Обрезать
+              </button>
+            </li>
+            <li class="editor__item">
+              <button class="editor__tool editor__tool--fill">
+                Заливка
+              </button>
+            </li>
+            <li class="editor__item">
+              <button class="editor__tool editor__tool--filter">
+                Фильтр
+              </button>
+            </li>
+          </ul>
+          <button
+            class="editor__button oval-button oval-button--pink"
+            type="submit"
+          >
+            Запостить
+          </button>
+          <button
+            class="editor__button oval-button oval-button--pink"
+            type="reset"
+          >
+            Отмена
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo-link">
+        <img
+          class="page-footer__logo-image"
+          src="img/placeholder"
+          width=""
+          height=""
+          alt="Логотип Pink"
+        />
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">Twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--play" href="#">Play</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/"></a>
+      </div>
+    </footer>
+  </body>
+</html>
