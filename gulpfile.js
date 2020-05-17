@@ -1,6 +1,6 @@
 let
-	fileswatch = 'htm,txt,json,md,woff2', // List of files extensions for watching & hard reload (comma separated)
-	imageswatch = 'jpg,jpeg,png,webp,svg', // List of images extensions for watching & compression (comma separated)
+	fileswatch = 'html,css,txt,json,md,woff2', // List of files extensions for watching & hard reload (comma separated)
+	imageswatch = 'jpg,jpeg,png,webp,svg', // List of images extensions for watching & compression (comma separated)	
 	online = true; // If «false» - Browsersync will work offline without internet connection
 
 let paths = {
@@ -71,6 +71,7 @@ function styles() {
 		.pipe(csso())
 		.pipe(rename("style.min.css"))
 		.pipe(dest(paths.styles.dest))
+		.pipe(browserSync.stream())
 }
 
 function html() {
@@ -116,7 +117,7 @@ function browsersync() {
 }
 
 function startwatch() {
-	watch("source/scss/**/*.scss", styles);
+	watch("source/sass/*.scss", styles);
 	watch("source/img/**/*.{png,jpg,svg}", images);
 	watch("source/*.html", html);
 	watch('build/**/*.{' + fileswatch + '}').on('change', browserSync.reload);
@@ -132,7 +133,7 @@ exports.images = images;
 exports.webp = webp;
 exports.html = html;
 exports.cleanimg = cleanimg;
-exports.default = parallel(images, styles, copy_js, html, browsersync, startwatch);
+exports.default = parallel(images, copy_js, styles, html, browsersync, startwatch);
 
 
 
