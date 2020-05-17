@@ -47,11 +47,17 @@
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
         </p>
-        <form class="profile__form" action="echo.htmlacademy.ru" method="get">
+        <form
+          class="profile__form"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
           <fieldset class="profile__name text-group">
             <ul class="text-group__list">
-              <li class="text-group__item" for="second-name">
-                <label class="text-group__label">Фамилия:</label>
+              <li class="text-group__item">
+                <label class="text-group__label" for="second-name"
+                  >Фамилия:</label
+                >
                 <input
                   class="text-group__input"
                   type="text"
@@ -169,8 +175,10 @@
 
           <fieldset class="profile__contacts text-group">
             <ul class="text-group__list">
-              <li class="text-group__item" for="phone">
-                <label class="text-group__label">Номер телефона:</label>
+              <li class="text-group__item">
+                <label class="text-group__label" for="phone"
+                  >Номер телефона:</label
+                >
                 <input
                   class="text-group__input"
                   type="number"
@@ -239,7 +247,9 @@
           </fieldset>
 
           <p class="profile__review emotions">
-            <label for="emotions__label">Опишите свои эмоции</label>
+            <label class="emotions__label" for="emotions"
+              >Опишите свои эмоции</label
+            >
             <textarea
               class="emotions__area"
               name="emotions"

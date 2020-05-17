@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pink</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__menu page-header">
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-image" src="img/placeholder" width="" height="" alt="Логотип Pink">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-header__page-title">
+        <h1 class="main-header__title">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h1>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="profile">
+        <p class="profile__text">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
+        <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="profile__name text-group">
+            <ul class="text-group__list">
+              <li class="text-group__item">
+                <label class="text-group__label" for="second-name">Фамилия:</label>
+                <input class="text-group__input" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию">
+              </li>
+              <li class="text-group__item">
+                <label class="text-group__label" for="first-name">Имя:</label>
+                <input class="text-group__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*">
+              </li>
+              <li class="text-group__item">
+                <label class="text-group__label" for="father-name">Отчество:</label>
+                <input class="text-group__input" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="profile__achievments toggle-group">
+            <legend class="toggle-group__description">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+            <ul class="toggle-group__list">
+              <li class="toggle-group__item toggle-group__item--checkbox">
+                <input class="toggle-group__checkbox" type="checkbox" name="shark" id="shark" checked="">
+                <label class="toggle-group__label" for="shark">Сделал селфи с акулой</label>
+              </li>
+
+              <li class="toggle-group__item toggle-group__item--checkbox">
+                <input class="toggle-group__checkbox" type="checkbox" name="beach" id="beach" checked="">
+                <label class="toggle-group__label" for="beach">Обгорел на пляже</label>
+              </li>
+
+              <li class="toggle-group__item toggle-group__item--checkbox">
+                <input class="toggle-group__checkbox" type="checkbox" name="chack" id="chack">
+                <label class="toggle-group__label" for="chack">Видел Чака Норриса</label>
+              </li>
+
+              <li class="toggle-group__item toggle-group__item--checkbox">
+                <input class="toggle-group__checkbox" type="checkbox" name="gift" id="gift">
+                <label class="toggle-group__label" for="gift">Накупил сувениров</label>
+              </li>
+
+              <li class="toggle-group__item toggle-group__item--checkbox">
+                <input class="toggle-group__checkbox" type="checkbox" name="tower" id="tower" checked="">
+                <label class="toggle-group__label" for="tower">Удержал башню</label>
+              </li>
+
+              <li class="toggle-group__item toggle-group__item--checkbox">
+                <input class="toggle-group__checkbox" type="checkbox" name="hotel" id="hotel">
+                <label class="toggle-group__label" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="profile__contacts text-group">
+            <ul class="text-group__list">
+              <li class="text-group__item">
+                <label class="text-group__label" for="phone">Номер телефона:</label>
+                <input class="text-group__input" type="number" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="text-group__item">
+                <label class="text-group__label" for="email">Адрес почты:</label>
+                <input class="text-group__input" type="email" name="email" id="email" placeholder="Введите почту*">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="profile__apps toggle-group">
+            <legend class="toggle-group__description">
+              С каким приложением путешествовали?
+            </legend>
+            <ul class="toggle-group__list">
+              <li class="toggle-group__item toggle-group__item--radio">
+                <input class="toggle-group__radio" type="radio" name="ios" id="ios" checked="">
+                <label class="toggle-group__label" for="ios">Pink для iOS</label>
+              </li>
+
+              <li class="toggle-group__item toggle-group__item--radio">
+                <input class="toggle-group__radio" type="radio" name="android" id="android">
+                <label class="toggle-group__label" for="android">Pink для Android</label>
+              </li>
+
+              <li class="toggle-group__item toggle-group__item--radio">
+                <input class="toggle-group__radio" type="radio" name="windows" id="windows">
+                <label class="toggle-group__label" for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <p class="profile__review emotions">
+            <label class="emotions__label" for="emotions">Опишите свои эмоции</label>
+            <textarea class="emotions__area" name="emotions" id="emotions" cols="30" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </p>
+          <button class="profile__button" type="submit">Отправить форму</button>
+        </form>
+        <p class="profile__necessary-field">
+          <span class="profile__note">*</span> - обязательное поле
+        </p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo-link">
+        <img class="page-footer__logo-image" src="img/placeholder" width="" height="" alt="Логотип Pink">
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">Twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--play" href="#">Play</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/"></a>
+      </div>
+    </footer>
+  </body>
+</html>
